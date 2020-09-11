@@ -1,0 +1,18 @@
+Image Pre-Processing.ipynb
+.ipynb_checkpoints/
+4_recommendation.ipynb
+Text detection pics/
+__pycache__/
+images/OpenCV_Logo_with_text_svg_version.svg.png
+images/bookshelf10.jpg
+images/bookshelf11.jpg
+images/bookshelf12.jpg
+images/bookshelf13.jpg
+opencv-text-detection/
+opencv-text-recognition/
+recommender results/
+temp.jpg
+text_detection_testing.ipynb
+
+data/
+.DS_Store

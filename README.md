@@ -64,6 +64,10 @@ SoftCopy leverages OpenCV and Pytesseract to perform OCR. Images pass through th
 
   * Cosine similarity determines closest match!
 
+<figure class="video_container">
+  <iframe src="https://drive.google.com/file/d/1Nf8UnxrqOGiPAo__w5AccDt8pdP0Xd5X/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
 ### Tools
 * Jupyter Notebook
 * Atom

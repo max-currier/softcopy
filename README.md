@@ -2,7 +2,7 @@
 
 Max Currier
 
-### What is SoftCopy?
+## What is SoftCopy?
 
 * Get book recommendations from just an image of your bookshelf
 
@@ -10,14 +10,14 @@ Max Currier
 
 * Simply upload a photo and the app does the rest!
 
-### Methodology
+## Methodology
 After a user uploads their photo, the app goes through 3 main phases:
 
 1. Optical character recognition (OCR)
 2. Text matching
 3. Recommendations
 
-### Optical Character Recognition
+## Optical Character Recognition
 
 SoftCopy leverages OpenCV and Pytesseract to perform OCR. Images pass through the following processing pipeline:
 
@@ -48,7 +48,7 @@ SoftCopy leverages OpenCV and Pytesseract to perform OCR. Images pass through th
 
     <img src="viz/text_match_3.png" alt="OCR step 3" width="250"/>
 
-### Text matching
+## Text matching
 
 
   * 266,664 book titles pulled from the [Book Crossing](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) dataset
@@ -57,18 +57,18 @@ SoftCopy leverages OpenCV and Pytesseract to perform OCR. Images pass through th
 
   ![](viz/text_matching.png)
 
-### Recommendation
+## Recommendation
   * Collaborative filtering suggests books based on user ratings. Because this approach is strictly based off of user behavior, it should be able to exploit some hidden correlations in the data
 
   * Singular value decomposition (SVD) breaks ratings into 800 abstract categories
 
   * Cosine similarity determines closest match!
 
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1Nf8UnxrqOGiPAo__w5AccDt8pdP0Xd5X/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+  <figure class="video_container">
+    <iframe src="https://drive.google.com/file/d/1Nf8UnxrqOGiPAo__w5AccDt8pdP0Xd5X/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe>
+  </figure>
 
-### Tools
+## Tools
 * Jupyter Notebook
 * Atom
 * Pytesseract

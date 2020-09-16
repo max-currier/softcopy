@@ -40,14 +40,18 @@ def best_match(input_str, df, min_confidence=75):
     best_match_isbn = df.loc[best_match_index].ISBN
 
     if best_match_ratio > min_confidence:
-        st.markdown('* Closest match for "*{}*":  \n **{}** by **{}** with {}% confidence.'.format(input_str, best_match_title, best_match_author, best_match_ratio))
+        st.markdown('''* Closest match for "*{}*":  \n **{}** by **{}** with {}% confidence.'''
+            .format(input_str, best_match_title, best_match_author, best_match_ratio),
+            unsafe_allow_html=True)
         #w.i.p.: buttons to select/deselect books from rec process
         #override = st.sidebar.checkbox(label=best_match_title, value=True)
         #if override:
         return best_match_isbn
 
     else:
-        st.markdown('* No match for "*{}*".  \n (Closest match was "{}" with {}% confidence.)'.format(input_str, best_match_title_author, best_match_ratio))
+        st.markdown('''* <span style="color:lightgrey"> No match for "*{}*". \nClosest match was "{}" with {}% confidence. </span>'''
+            .format(input_str, best_match_title_author, best_match_ratio),
+            unsafe_allow_html=True)
         #override = st.sidebar.checkbox(label=best_match_title, value=False)
         #if override:
             #return best_match_isbn

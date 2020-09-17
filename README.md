@@ -79,6 +79,4 @@ SoftCopy leverages OpenCV and Pytesseract to perform OCR. Images pass through th
 * Numpy
 * Matplotlib
 * Seaborn
-* Re
-* String
 * Pickle

@@ -13,5 +13,6 @@ recommender results/
 temp.jpg
 text_detection_testing.ipynb
 
+video/
 data/
 .DS_Store
